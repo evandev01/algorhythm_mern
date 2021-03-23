@@ -1,6 +1,10 @@
 const express = require('express');
 
+const db = require('./model');
+
 const app = express();
+
+app.use(express.json({ extended: false }));
 
 app.get('/', (req, res) => res.json({ msg: 'Welcome to the music player' }));
 
@@ -10,4 +14,10 @@ app.use('/api/song', require('./routes/song'));
 
 const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+db.sequelize.sync().then(() => {
+  app.listen(PORT, () => {
+    console.log(
+      `==> 🌎 Server listening on port ${PORT}. Visit http://localhost${PORT} in your browser.`
+    );
+  });
+});
