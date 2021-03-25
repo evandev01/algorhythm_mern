@@ -12,7 +12,7 @@ app.get('/', (req, res) => res.json({ msg: 'Welcome to the music player' }));
 app.use('/api/playlist', require('./routes/playlist'));
 app.use('/api/song', require('./routes/song'));
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 db.sequelize.sync().then(() => {
   app.listen(PORT, () => {
