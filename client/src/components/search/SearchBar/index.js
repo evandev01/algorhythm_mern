@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Form, FormControl, Button } from 'react-bootstrap';
 
 const SearchBar = props => {
   return (
-    <div>
-      <Form inline>
+    <Fragment>
+      <Form onSubmit={e => props.onSubmit(e)} inline>
         <FormControl
           onChange={props.onChange}
           type='text'
@@ -14,15 +14,11 @@ const SearchBar = props => {
           onChange={e => props.handleChange(e)}
           className='mr-sm-2'
         />
-        <Button
-          type='submit'
-          onClick={e => props.onSubmit(e)}
-          variant='outline-success'
-        >
+        <Button type='submit' variant='outline-success'>
           Search Songs
         </Button>
       </Form>
-    </div>
+    </Fragment>
   );
 };
 
