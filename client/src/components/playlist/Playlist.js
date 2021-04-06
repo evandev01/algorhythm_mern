@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { getPlaylists } from '../../store/actions/playlist';
 
-export const Playlist = props => {
+const Playlist = props => {
   return <div></div>;
 };
 
