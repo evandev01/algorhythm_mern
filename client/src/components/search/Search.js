@@ -3,8 +3,8 @@ import axios from 'axios';
 // import PropTypes from 'prop-types';
 // import { connect } from 'react-redux';
 
-import SearchBar from '../components/search/SearchBar';
-import Songs from '../components/search/Songs';
+import SearchBar from './SearchBar';
+import Songs from './Songs';
 
 // import { getSongs } from '../store/actions/search';
 

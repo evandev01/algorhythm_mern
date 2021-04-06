@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const db = require('../model');
+const db = require('../../model');
 
 // @route  GET api/song
 // @desc   Gets songs from search request

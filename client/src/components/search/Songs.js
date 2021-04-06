@@ -24,17 +24,6 @@ const Songs = props => {
     songs = [];
   }
 
-  // songs.map(song => {
-
-  // console.log(song.title);
-  // console.log(song.album.cover_big);
-  // console.log(song.album.title)
-  // console.log(song.preview);
-  // console.log(song.artist.name);
-
-  // console.log(song);
-  // });
-
   return (
     <Container>
       <div>
@@ -57,12 +46,6 @@ const Songs = props => {
       </div>
 
       {songs.map(song => {
-        // console.log(song.title);
-        // console.log(song.album.cover_big);
-        // console.log(song.album.title)
-        // console.log(song.preview);
-        // console.log(song.artist.name);
-        // console.log(song);
         var songName = song.title;
         var artistName = song.artist.name;
         var albumName = song.album.title;
