@@ -1,2 +1,2 @@
-// export const GET_SONGS = 'GET_SONGS';
-// export const POST_SONG = 'POST_SONG';
+export const GET_PLAYLISTS = 'GET_PLAYLISTS';
+export const POST_PLAYLIST = 'POST_PLAYLIST';

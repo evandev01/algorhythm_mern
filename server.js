@@ -6,7 +6,7 @@ const app = express();
 
 app.use(express.json({ extended: false }));
 
-app.get('/', (req, res) => res.json({ msg: 'Welcome to the music player' }));
+// app.get('/', (req, res) => res.json({ msg: 'Welcome to the music player' }));
 
 // Define Routes
 app.use('/api/playlist', require('./routes/playlist'));
